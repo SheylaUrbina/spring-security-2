@@ -1,4 +1,4 @@
-package com.registro.usuarios;
+package com.registro.usuarios.dto;
 
 import java.io.Serializable;
 

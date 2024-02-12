@@ -32,7 +32,10 @@ public class Usuario2 {
 	@Column(name = "apellido")
 	private String apellido;
 
+	@Column(name = "email")
 	private String email;
+	
+	@Column(name = "password")
 	private String password;
 	
 	@ManyToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
