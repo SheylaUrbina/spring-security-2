@@ -20,10 +20,6 @@ import com.registro.usuarios.servicio.UsuarioServicio2;
 
 
 
-
-
-
-
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter{

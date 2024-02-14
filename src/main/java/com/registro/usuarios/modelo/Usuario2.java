@@ -17,7 +17,7 @@ import javax.persistence.UniqueConstraint;
 
 
 @Entity
-@Table(name = "usuarios", uniqueConstraints = @UniqueConstraint(columnNames = "email"))
+@Table(name = "usuarios", uniqueConstraints = @UniqueConstraint(columnNames = "nombre"))
 public class Usuario2 {
 	
 	

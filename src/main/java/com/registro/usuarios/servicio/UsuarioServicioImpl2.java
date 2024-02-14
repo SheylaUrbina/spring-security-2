@@ -56,6 +56,9 @@ public class UsuarioServicioImpl2 implements UsuarioServicio2,UserDetailsService
 	
 	@Override
 	public ResponseEntity<String> verUsuario (UsuarioDTO usuario) {
+		
+		System.out.println("Usuario: "+ usuario.getNombre());
+		System.out.println("Clave: "+usuario.getPassword());
 		Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
 				  usuario.getNombre(), usuario.getPassword()));
 	        SecurityContextHolder.getContext().setAuthentication(authentication);
